@@ -134,7 +134,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #555555;
-		font-weight: 900;
+		font-weight: var(--font-extra-heavy);;
 		letter-spacing: 0.05em;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -2086,7 +2086,7 @@ input, select, textarea {
 		color: #555555;
 		display: block;
 		font-size: 0.9em;
-		font-weight: 900;
+		font-weight: var(--font-extra-heavy);;
 		margin: 0 0 1em 0;
 	}
 
@@ -2199,7 +2199,7 @@ input, select, textarea {
 				line-height: 1;
 				text-transform: none !important;
 				font-family: 'Font Awesome 5 Free';
-				font-weight: 900;
+				font-weight: var(--font-heavy);
 			}
 
 			input[type="checkbox"] + label:before,
@@ -2304,7 +2304,7 @@ input, select, textarea {
 		}
 
 		.icon.solid:before {
-			font-weight: 900;
+			font-weight: var(--font-heavy);
 		}
 
 		.icon.brands:before {
@@ -2663,7 +2663,7 @@ input, select, textarea {
 		table th {
 			color: #555555;
 			font-size: 0.9em;
-			font-weight: 900;
+			font-weight: var(--font-heavy);
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
 		}
@@ -2723,7 +2723,7 @@ input, select, textarea {
 		color: var(--alice-blue) !important;
 		cursor: pointer;
 		display: inline-block;
-		font-weight: 900;
+		font-weight: var(--font-extra-heavy);;
 		height: 3em;
 		letter-spacing: 0.05em;
 		line-height: 3em;
@@ -3000,7 +3000,7 @@ input, select, textarea {
 	}
 
 	#header {
-		background: #443e39;
+		background: var(--fern-green);
 		color: #e3e2e1;
 		cursor: default;
 		height: 3.25em;
@@ -3013,13 +3013,13 @@ input, select, textarea {
 	}
 
 		#header h1 {
-			height: inherit;
+			/* height: inherit;
 			left: 1.25em;
 			line-height: inherit;
 			margin: 0;
 			padding: 0;
 			position: absolute;
-			top: 0;
+			top: 0; */
 		}
 
 			#header h1 a {
@@ -3055,7 +3055,7 @@ input, select, textarea {
 					#header nav > ul > li a {
 						color: #fff !important;
 						display: inline-block;
-						font-weight: 900;
+						font-weight: var(--font-heavy);
 						letter-spacing: 0.05em;
 						text-decoration: none;
 						text-indent: -0.05em;
@@ -3238,6 +3238,7 @@ input, select, textarea {
 			color: var(--alice-blue);
 			font-size: 2em;
 			margin-bottom: 1.75em;
+			line-height: normal;
 		}
 
 		#banner input[type="submit"].alt,
@@ -3529,7 +3530,7 @@ input, select, textarea {
 						line-height: 1;
 						text-transform: none !important;
 						font-family: 'Font Awesome 5 Free';
-						font-weight: 900;
+						font-weight: var(--font-extra-heavy);;
 					}
 
 					#navButton .toggle:before {
@@ -3805,6 +3806,9 @@ input, select, textarea {
 
 
 	/* Mo Additions */
+	html {
+        scroll-behavior: smooth;
+    }
 
 	@font-face {
 		font-family: 'Manuale';
@@ -3813,6 +3817,8 @@ input, select, textarea {
 
 	* {
 		--font-logo: 'Manuale';
+		--font-heavy: 500;
+		--font-extra-heavy: 700;
 		--color-blue: #6ccae9;
 		--color-grey: #E5D5E4;
 	}
@@ -3888,7 +3894,55 @@ input, select, textarea {
 
 
 
+
+
+
+	/* Application Page */
+	header #home {
+		display: none !important;
+	}
+
+	@media screen and (max-width: 840px) {
+		header #home {
+			display: block;
+		}
+	}
+
+	header .logo-container {
+		height: inherit;
+		left: 1.25em;
+		line-height: inherit;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		display: flex;
+		align-items: center;
+	}
+
+	header .logo-container img {
+		height: 50%;
+	}
+
+	header .logo-container h1 {
+		margin-left: 0.5em;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		color: var(--alice-blue);
+		font-size: 1.5rem;
+	}
+	
 	form p {
+		margin: 0.5rem;
+		color: #555555;
+	}
+	textarea {
+        resize: vertical;
+        /* Optional: you can also set a max-height if you want */
+        max-height: 600px; /* Example: maximum height of 300 pixels */
+    }
+
+	#sidebar p {
 		margin: 0.5rem;
 		color: #555555;
 	}
