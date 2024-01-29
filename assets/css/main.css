@@ -3885,3 +3885,10 @@ input, select, textarea {
 	#banner h1 {
 		width: fit-content !important;
 	}
+
+
+
+	form p {
+		margin: 0.5rem;
+		color: #555555;
+	}
