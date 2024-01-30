@@ -3892,6 +3892,20 @@ input, select, textarea {
 		width: fit-content !important;
 	}
 
+	#partners section.special {
+		margin-bottom: 1.5rem;
+	}
+
+	#partners section.special a.image.fit {
+		margin-bottom: 1rem;
+	}
+
+	a.image.fit.maf img {
+		width: 100%;
+		object-fit: contain;
+		object-position: center;
+		aspect-ratio: 1001/572;
+	}
 
 
 
