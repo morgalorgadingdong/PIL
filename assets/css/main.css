@@ -3892,6 +3892,10 @@ input, select, textarea {
 		width: fit-content !important;
 	}
 
+	#about p {
+		text-align: left;
+	}
+
 	#partners section.special {
 		margin-bottom: 1.5rem;
 	}
@@ -3906,6 +3910,7 @@ input, select, textarea {
 		object-position: center;
 		aspect-ratio: 1001/572;
 	}
+
 
 
 
