@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/all.css" />
+		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css"/>
 	</head>
 	<body class="landing is-preload">
 		<div id="page-wrapper">
@@ -16,9 +17,9 @@
 					<h1><a href="index.html"></a></h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="">About</a></li>
+							<li><a href=" https://www.multnomahathleticfoundation.com/grants/#grant-special" target="_blank">About</a></li>
 							<li><a href="apply-2024.html" class="">Apply</a></li>
-							<li><a href="elements.html">Donate</a></li>
+							<li><a href="https://secure.givelively.org/donate/multnomah-athletic-foundation-inc" target="_blank">Donate</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -36,7 +37,7 @@
 				</section>
 
 			<!-- One -->
-				<div class="wrapper style1">
+				<div id="section-one" class="wrapper style1">
 					<section class="container">
 						<header class="major">
 							<h2>Overview</h2>
@@ -44,22 +45,24 @@
 						</header>
 						<div class="row gtr-uniform">
 							<div class="col-4 col-12-narrower">
-								<a href=""><section class="box special">
-									<i class="icon major solid fa-golf-ball-tee"></i>
+								<a href="https://www.multnomahathleticfoundation.com/grants/#grant-special" target="_blank"><section class="box special">
+									<i class="icon major fa-solid fa-golf-ball-tee"></i>
+									<!-- <i class="fa-solid fa-golf-ball-tee"></i> -->
+									<!-- <i class="icon major fa-solid fa-file-lines"></i> -->
 									<h3>About</h3>
 									<!-- <p>Morbi in sem quis dui placerat ornare lorem pellentesque odio nisi sed euismod. In tempus posuere augue eu magna adipiscing.</p> -->
 								</section></a>
 							</div>
 							<div class="col-4 col-12-narrower">
-								<a href=""><section class="box special">
-									<i class="icon major solid fa-file-lines"></i>
+								<a href="apply-2024.html"><section class="box special">
+									<i class="icon major fa-solid fa-file-lines"></i>
 									<h3>Apply</h3>
 									<!-- <p>Morbi in sem quis dui placerat ornare lorem pellentesque odio nisi sed euismod. In tempus posuere augue eu magna adipiscing.</p> -->
 								</section></a>
 							</div>
 							<div class="col-4 col-12-narrower">
-								<a href=""><section class="box special">
-									<i class="icon major solid fa-solid fa-hand-holding-dollar"></i>
+								<a href="https://secure.givelively.org/donate/multnomah-athletic-foundation-inc" target="_blank"><section class="box special">
+									<i class="icon major fa-solid fa-hand-holding-dollar"></i>
 									<h3>Donate</h3>
 									<!-- <p>Morbi in sem quis dui placerat ornare lorem pellentesque odio nisi sed euismod. In tempus posuere augue eu magna adipiscing.</p> -->
 								</section></a>
@@ -73,7 +76,7 @@
 					<section class="container medium">
 						<header class="major">
 							<h2>About</h2>
-							<!-- <p>Aliquet ante lobortis non semper gravida. Accumsan faucibus praesent ante aliquet amet posuere ac cubilia. Eu faucibus mi neque adipiscing mi lorem. Semper blandit. Amet adipiscing interdum.</p> -->
+							<p>The PIL Golf Award is awarded to student athletes who attend and compete for a school sponsored golf team in the Portland Interscholastic League.  The Multnomah Athletic Foundation proudly administered the award for a female and a male golfer.   The selection process is supported by the head coaches at the schools to provide equipment and resources to enable individuals to compete at their highest level.</p>
 						</header>
 						<div class="row gtr-uniform">
 							<div class="col-6 col-12-narrower">
@@ -94,7 +97,7 @@
 								<section class="box special about-item">
 									<i class="icon major alt solid fa-desktop"></i>
 									<h3>Timeline</h3>
-									<p>Applications will be accepted until March 31st, and the winner will be announced April 25th.</p>
+									<p>Applications will be open starting March 1st, and will be due by March 31st. The winner will be announced April 25th at the District Tournament.</p>
 								</section>
 							</div>
 							<div class="col-6 col-12-narrower">
@@ -164,28 +167,32 @@
 						</header>
 						<div id="contact" class="box">
 							<div class="row gtr-uniform">
-								<div class="col-7 col-12-narrower">
-									<form method="post" action="#">
+								<div class="col-12 col-12-narrower">
+									<form method="post" action="#" netlify>
+										<!-- <p>Use the form below to send us a message, or you can email us at pillegacygolfgrant@gmail.com</p> -->
 										<div class="row gtr-uniform gtr-50">
 											<div class="col-12">
-												<input type="text" name="name" id="name" placeholder="Name" />
+												<input type="text" name="name" id="name" placeholder="Name" required/>
 											</div>
 											<div class="col-12">
-												<input type="email" name="email" id="email" placeholder="Email" />
+												<input type="email" name="email" id="email" placeholder="Email" required/>
 											</div>
 											<div class="col-12">
-												<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+												<textarea name="message" id="message" placeholder="Message" rows="7" required></textarea>
 											</div>
-											<div class="col-12">
+											<div class="col-12 center">
 												<ul class="actions">
 													<li><input type="submit" value="Send" /></li>
 													<li><input type="reset" class="alt" value="Reset" /></li>
+													
 												</ul>
+													
 											</div>
+											<p class="col-12 text-center">pillegacygolfgrant@gmail.com</p>
 										</div>
 									</form>
 								</div>
-								<div class="col-5 col-12-narrower">
+								<!-- <div class="col-5 col-12-narrower">
 									<ul class="labeled-icons">
 										<li>
 											<h3 class="icon solid fa-map-marker-alt"><span class="label">Address</span></h3>
@@ -199,9 +206,9 @@
 										</li>
 										<li>
 											<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-											<a href="#">information@untitled.tld</a>
+											<a href="#">pillegacygolfgrant@gmail.com</a>
 										</li>
-										<!-- <li>
+										<li>
 											<h3 class="icon brands fa-twitter"><span class="label">Twitter</span></h3>
 											<a href="#">twitter.com/untitled-tld</a>
 										</li>
@@ -212,9 +219,9 @@
 										<li>
 											<h3 class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></h3>
 											<a href="#">linkedin.com/untitled-tld</a>
-										</li> -->
+										</li>
 									</ul>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</section>
