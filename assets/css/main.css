@@ -3840,6 +3840,21 @@ input, select, textarea {
 		font-weight: 400;
 	}
 
+
+
+	i > img {
+		height: 1.5em;
+		color: white;
+	}
+
+	i.img-container {
+		width: 100%;
+		display: flex !important;
+		justify-content: center;
+		align-items: center;
+
+	}
+
 	#section-one i:hover {
 		cursor: pointer;
 	}
