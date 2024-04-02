@@ -3946,6 +3946,14 @@ input, select, textarea {
 	
 	}
 
+	.justify-content-center {
+		display: flex;
+		justify-content: center;
+	}
+
+	.mb-5 {
+		margin-bottom: 5rem;
+	}
 
 
 	/* Application Page */
