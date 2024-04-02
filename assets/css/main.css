@@ -3933,6 +3933,13 @@ input, select, textarea {
 		aspect-ratio: 1001/572;
 	}
 
+	a.image.fit.andersen img {
+		height: 100%;
+		object-fit: contain;
+		object-position: center;
+		aspect-ratio: 1001/572;
+	}
+
 
 
 	#contact .center {
